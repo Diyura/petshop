@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PetshopKP</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="get_solution">Ask Your any Question for Expert adn get Solution for your problem</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+    <string name="profile_information">Profile Information</string>
+    <string name="save_profile">Save Profile</string>
+</resources>
