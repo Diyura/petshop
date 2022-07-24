@@ -10,6 +10,10 @@ import id.unama.petshopkp.fragment.UserFragment
 
 class MainActivity : AppCompatActivity() {
 
+    companion object{
+        val INTENT_PARCELABLE = "OBJECT_INTENT"
+    }
+
     lateinit var binding :ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         binding.tabs.setupWithViewPager(binding.viewPager)
 
         binding.tabs.getTabAt(0)!!.setIcon(R.drawable.ic_home)
-        binding.tabs.getTabAt(1)!!.setIcon(R.drawable.ic_shopping)
+        binding.tabs.getTabAt(1)!!.setIcon(R.drawable.ic_solution)
         binding.tabs.getTabAt(2)!!.setIcon(R.drawable.ic_user)
     }
 }

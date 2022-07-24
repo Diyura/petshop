@@ -10,15 +10,14 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
 import id.unama.petshopkp.R
 import id.unama.petshopkp.adapter.ProdukAdapter
-import id.unama.petshopkp.adapter.SliderAdapter
 import id.unama.petshopkp.databinding.FragmentShoppingBinding
 import id.unama.petshopkp.model.ModelProduk
 
 class ShoppingFragment : Fragment() {
 
     private var binding : FragmentShoppingBinding? = null
-    lateinit var vpSlider : ViewPager
     lateinit var rvObat : RecyclerView
+    lateinit var rvPeralatan : RecyclerView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,18 +25,6 @@ class ShoppingFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_shopping, container, false)
-
-        //slider
-        vpSlider = view.findViewById(R.id.vp_slider)
-
-        val arraySlider = ArrayList<Int>()
-
-        arraySlider.add(R.drawable.obat_slider1)
-        arraySlider.add(R.drawable.obat_slider2)
-        arraySlider.add(R.drawable.obat_slider3)
-
-        val sliderAdapter = SliderAdapter(arraySlider, activity)
-        vpSlider.adapter = sliderAdapter
 
         //RecyclerView
         val lm = LinearLayoutManager(activity)
@@ -49,12 +36,21 @@ class ShoppingFragment : Fragment() {
         rvObat.layoutManager = lm
         rvObat.adapter = adapterObat
 
+        val llm = LinearLayoutManager(activity)
+        llm.orientation = LinearLayoutManager.HORIZONTAL
+        rvPeralatan = view.findViewById(R.id.rv_vitamin)
+
+        val adapterpr = ProdukAdapter(ArrayVitamin,activity)
+        rvPeralatan.setHasFixedSize(true)
+        rvPeralatan.layoutManager = llm
+        rvPeralatan.adapter = adapterpr
+
         return view
     }
 
     val ArrayObat : ArrayList<ModelProduk>get(){
 
-        val arraybaju = ArrayList<ModelProduk>()
+        val arrayEtalase = ArrayList<ModelProduk>()
 
         //1
         val produkobat1 = ModelProduk()
@@ -80,30 +76,53 @@ class ShoppingFragment : Fragment() {
         produkobat4.hargaProduk = "Rp. belum ada"
         produkobat4.gambarProduk = R.drawable.obat_4
 
-        //5
-//        val produkbaju5 = ModelProduk()
-//        produkbaju5.namaProduk = "Jaket Merah"
-//        produkbaju5.hargaProduk = "Rp. 149.000"
-//        produkbaju5.gambarProduk = R.drawable.jaket_1
-//
-//        //6
-//        val produkbaju6 = ModelProduk()
-//        produkbaju6.namaProduk = "Jaket Hitam"
-//        produkbaju6.hargaProduk = "Rp. 149.000"
-//        produkbaju6.gambarProduk = R.drawable.jaket_2
+        arrayEtalase.add(produkobat1)
+        arrayEtalase.add(produkobat2)
+        arrayEtalase.add(produkobat3)
+        arrayEtalase.add(produkobat4)
 
-        arraybaju.add(produkobat1)
-        arraybaju.add(produkobat2)
-        arraybaju.add(produkobat3)
-        arraybaju.add(produkobat4)
-//        arraybaju.add(produkbaju5)
-//        arraybaju.add(produkbaju6)
+        return arrayEtalase
+    }
 
-        return arraybaju
+    val ArrayVitamin : ArrayList<ModelProduk>get(){
+
+        val arrayEtalase = ArrayList<ModelProduk>()
+
+        //1
+        val produkvitamin1 = ModelProduk()
+        produkvitamin1.namaProduk = "Obat Catyzole"
+        produkvitamin1.hargaProduk = "Rp. belum ada"
+        produkvitamin1.gambarProduk = R.drawable.obat_2
+
+        //2
+        val produkvitamin2 = ModelProduk()
+        produkvitamin2.namaProduk = "Obat Stop Dix"
+        produkvitamin2.hargaProduk = "Rp. belum ada"
+        produkvitamin2.gambarProduk = R.drawable.obat_1
+
+        //3
+        val produkvitamin3 = ModelProduk()
+        produkvitamin3.namaProduk = "Obat Scadix"
+        produkvitamin3.hargaProduk = "Rp. belum ada"
+        produkvitamin3.gambarProduk = R.drawable.obat_4
+
+        //4
+        val produkvitamin4 = ModelProduk()
+        produkvitamin4.namaProduk = "Obat Detick"
+        produkvitamin4.hargaProduk = "Rp. belum ada"
+        produkvitamin4.gambarProduk = R.drawable.obat_3
+
+        arrayEtalase.add(produkvitamin1)
+        arrayEtalase.add(produkvitamin2)
+        arrayEtalase.add(produkvitamin3)
+        arrayEtalase.add(produkvitamin4)
+
+        return arrayEtalase
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         binding = null
     }
+
 }
