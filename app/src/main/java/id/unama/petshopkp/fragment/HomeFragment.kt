@@ -1,20 +1,19 @@
 package id.unama.petshopkp.fragment
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
-import id.unama.petshopkp.*
+import id.unama.petshopkp.ChatActivity
+import id.unama.petshopkp.DetailActivity
+import id.unama.petshopkp.R
 import id.unama.petshopkp.adapter.ImageAdapter
-import id.unama.petshopkp.databinding.ActivityChatBinding
 import id.unama.petshopkp.databinding.FragmentHomeBinding
-import id.unama.petshopkp.databinding.FragmentUserBinding
 import id.unama.petshopkp.model.Image
 
 class HomeFragment : Fragment() {
@@ -31,7 +30,7 @@ class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -44,7 +43,7 @@ class HomeFragment : Fragment() {
 
         auth = FirebaseAuth.getInstance()
 
-        val imageList = listOf<Image>(
+        val imageList = listOf(
             Image(
                 R.drawable.img1,
                 "Image 1",
@@ -73,10 +72,10 @@ class HomeFragment : Fragment() {
         )
 
         val recyclerView: RecyclerView = view.findViewById(R.id._imageRecyclerView)
-        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerView.setHasFixedSize(true)
-        recyclerView.adapter = ImageAdapter(this, imageList){
-            val intent = Intent(this, DetailActivity::class.java)
+        recyclerView.adapter = ImageAdapter(requireContext(), imageList){
+            val intent = Intent(requireContext(), DetailActivity::class.java)
             intent.putExtra(INTENT_PARCELABLE, it)
             startActivity(intent)
 
