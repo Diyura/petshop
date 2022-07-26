@@ -1,4 +1,4 @@
-package id.unama.petshopkp
+package id.unama.petshopkp.model
 
 class Message {
     var message: String? = null

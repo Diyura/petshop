@@ -1,6 +1,5 @@
 package id.unama.petshopkp
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
@@ -10,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import id.unama.petshopkp.adapter.MessageAdapter
+import id.unama.petshopkp.model.Message
 
 class TampilanChatActivity : AppCompatActivity() {
 

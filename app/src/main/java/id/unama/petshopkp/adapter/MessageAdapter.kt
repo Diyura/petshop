@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
-import id.unama.petshopkp.Message
+import id.unama.petshopkp.model.Message
 import id.unama.petshopkp.R
 
 class MessageAdapter(val context: Context, val messageList: ArrayList<Message>):

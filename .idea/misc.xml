@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/PetshopKP/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.19166666666666668" />
         <entry key="..\:/PetshopKP/app/src/main/res/drawable/btn_background.xml" value="0.16018518518518518" />
+        <entry key="..\:/PetshopKP/app/src/main/res/drawable/custom.xml" value="0.19166666666666668" />
         <entry key="..\:/PetshopKP/app/src/main/res/drawable/ic_account_circle.xml" value="0.19166666666666668" />
         <entry key="..\:/PetshopKP/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.16018518518518518" />
         <entry key="..\:/PetshopKP/app/src/main/res/drawable/ic_chat.xml" value="0.19166666666666668" />
@@ -21,26 +22,30 @@
         <entry key="..\:/PetshopKP/app/src/main/res/layout/activity_change_email.xml" value="0.17552083333333332" />
         <entry key="..\:/PetshopKP/app/src/main/res/layout/activity_chat.xml" value="0.13333333333333333" />
         <entry key="..\:/PetshopKP/app/src/main/res/layout/activity_detail.xml" value="0.22" />
-        <entry key="..\:/PetshopKP/app/src/main/res/layout/activity_login.xml" value="0.18719211822660098" />
-        <entry key="..\:/PetshopKP/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/PetshopKP/app/src/main/res/layout/activity_list.xml" value="0.22" />
+        <entry key="..\:/PetshopKP/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/PetshopKP/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/PetshopKP/app/src/main/res/layout/activity_register.xml" value="0.22" />
-        <entry key="..\:/PetshopKP/app/src/main/res/layout/activity_reset_password.xml" value="0.17552083333333332" />
+        <entry key="..\:/PetshopKP/app/src/main/res/layout/activity_reset_password.xml" value="0.16666666666666666" />
         <entry key="..\:/PetshopKP/app/src/main/res/layout/activity_setup_profile.xml" value="0.16666666666666666" />
         <entry key="..\:/PetshopKP/app/src/main/res/layout/activity_tampilan_chat.xml" value="0.16666666666666666" />
         <entry key="..\:/PetshopKP/app/src/main/res/layout/fragment_chat.xml" value="0.16666666666666666" />
         <entry key="..\:/PetshopKP/app/src/main/res/layout/fragment_chat2.xml" value="0.16304347826086957" />
         <entry key="..\:/PetshopKP/app/src/main/res/layout/fragment_home.xml" value="0.16666666666666666" />
-        <entry key="..\:/PetshopKP/app/src/main/res/layout/fragment_shopping.xml" value="0.1453839516824849" />
+        <entry key="..\:/PetshopKP/app/src/main/res/layout/fragment_shopping.xml" value="0.22" />
         <entry key="..\:/PetshopKP/app/src/main/res/layout/fragment_user.xml" value="0.22" />
         <entry key="..\:/PetshopKP/app/src/main/res/layout/item_image.xml" value="0.11458333333333333" />
         <entry key="..\:/PetshopKP/app/src/main/res/layout/item_produk.xml" value="0.1358695652173913" />
         <entry key="..\:/PetshopKP/app/src/main/res/layout/item_profile.xml" value="0.22" />
+        <entry key="..\:/PetshopKP/app/src/main/res/layout/item_todo.xml" value="0.1" />
         <entry key="..\:/PetshopKP/app/src/main/res/layout/items_slider.xml" value="0.22" />
         <entry key="..\:/PetshopKP/app/src/main/res/layout/receive.xml" value="0.14666666666666667" />
+        <entry key="..\:/PetshopKP/app/src/main/res/layout/row_itemlayout.xml" value="0.22" />
         <entry key="..\:/PetshopKP/app/src/main/res/layout/sent.xml" value="0.13333333333333333" />
-        <entry key="..\:/PetshopKP/app/src/main/res/layout/user_layout.xml" value="0.1" />
+        <entry key="..\:/PetshopKP/app/src/main/res/layout/user_layout.xml" value="0.22" />
         <entry key="..\:/PetshopKP/app/src/main/res/menu/bottom_menu.xml" value="0.17552083333333332" />
         <entry key="..\:/PetshopKP/app/src/main/res/menu/menu.xml" value="0.17552083333333332" />
+        <entry key="..\:/PetshopKP/app/src/main/res/menu/nav_menu.xml" value="0.17552083333333332" />
         <entry key="..\:/PetshopKP/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/PetshopKP/app/src/main/res/mipmap-anydpi-v26/ic_launcher_petshopdepan.xml" value="0.1" />
         <entry key="..\:/PetshopKP/app/src/main/res/mipmap-anydpi-v26/ic_launcher_petshopdepan_round.xml" value="0.1" />

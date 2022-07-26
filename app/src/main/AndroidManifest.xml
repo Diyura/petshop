@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="id.unama.petshopkp">
+    package="id.unama.petshopkp" >
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,10 @@
         android:label="Petshop Parcocoon"
         android:roundIcon="@mipmap/ic_launcher_petshop_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PetshopKP">
+        android:theme="@style/Theme.PetshopKP" >
+        <activity
+            android:name=".ListActivity"
+            android:exported="false" />
         <activity
             android:name=".DetailActivity"
             android:exported="false" />
@@ -29,7 +32,7 @@
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

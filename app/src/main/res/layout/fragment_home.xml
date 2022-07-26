@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cream"
     tools:context=".fragment.HomeFragment">
 
 
@@ -30,6 +31,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Answer &amp; Question"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textStyle="bold|normal"
+                app:backgroundTint="@color/purple_500" />
+
+            <Button
+                android:id="@+id/btn_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To-Do List"
                 android:textAllCaps="false"
                 android:textSize="16sp"
                 android:textStyle="bold|normal"
